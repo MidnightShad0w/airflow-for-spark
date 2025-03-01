@@ -1,3 +1,7 @@
+# docker-compose up airflow-setup
+# ctrl+c
+# docker-compose up -d
+# docker-compose run --rm airflow-webserver airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email ds.quicksave@gmail.com
 
 x-airflow-common: &airflow-common
   image: apache/airflow:2.5.1
