@@ -22,7 +22,7 @@ with DAG(
         endpoint='/spark/api/process',
         method='POST',
         headers={"Content-Type": "application/json"},
-        data='{"filePath": "s3a://bucket-spark/fulldata/"}',
+        data='{"filePath": "s3a://bucket-spark/uploads/"}',
     )
 
     process_files
