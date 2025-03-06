@@ -12,7 +12,7 @@ default_args = {
 with DAG(
     dag_id='process_logs_dag',
     default_args=default_args,
-    schedule_interval='*/2 * * * *',  # каждые 2 минуты
+    schedule_interval='*/1 * * * *',  # каждые 1 минуты
     catchup=False
 ) as dag:
 
